@@ -2,10 +2,11 @@
 
 def solution(my_string):
     answer = 0
-    
-    for i in my_string:
-        if i.isdigit(): #isdigit :문자열이 정수면 True / 실수,문자면 False로 반환하는 함수
-            answer += int(i) 
+
+    for char in my_string:
+        if not (ord('A') <= ord(char) <= ord('z')):
+            answer += int(char)
+
 
     return answer
 

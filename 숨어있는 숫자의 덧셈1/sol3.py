@@ -2,12 +2,14 @@
 
 def solution(my_string):
     answer = 0
-    
+    numbers = []
+
+
     for i in my_string:
         if i.isdigit(): #isdigit :문자열이 정수면 True / 실수,문자면 False로 반환하는 함수
-            answer += int(i) 
+            numbers.append(int(i))  #리스트 메소드 is ~ : ~ 인지 물어보는 함수
 
-    return answer
+    return sum(answer)
 
 print(solution('aAb1B2cC34oOp'))
 print(solution('1a2b3c4d123'))

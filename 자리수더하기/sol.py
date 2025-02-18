@@ -2,8 +2,9 @@
 # solution 함수를 완성해주세요
 
 def solution(n):
-    str_n = str(n) #각자리 수를 더해야 하므로 문자형으로
+    str_n = str(n) # 각자리 수를 더해야 하므로 문자형으로  / (list tuple range string)만 시퀀스 형태
     answer = 0
+    
     for i in str_n:
         answer += int(i) # answer + i 
     return answer
